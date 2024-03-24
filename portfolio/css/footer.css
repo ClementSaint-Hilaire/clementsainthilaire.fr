@@ -1,7 +1,7 @@
 @import url('chillax.css');
 
 :root {
-    --blanc : #F0F0F0;
+    --blanc : #F5F5F7;
     --noir : #0D0D0D;
 }
 *{
@@ -12,7 +12,9 @@
     color: var(--noir);
     font-family: 'Chillax-Variable';
 }
-
+body {
+    overflow-x: hidden;
+}
 
 .Footer  {
     width: 100%;

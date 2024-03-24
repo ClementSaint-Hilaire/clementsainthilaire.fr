@@ -90,7 +90,7 @@
                 $content_with_styles = preg_replace_callback(
                     '/\$([^$]+)\$/',
                     function($matches) {
-                        return '<a href="' . $matches[1] . '">' . $matches[1] . '</a>';
+                        return '<a href="' . $matches[1] . '"> lien </a>';
                     },
                     $content_with_styles
                 );

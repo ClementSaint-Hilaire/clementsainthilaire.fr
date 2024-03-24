@@ -13,7 +13,9 @@
     color: var(--text-noir);
     font-family: 'Satoshi-Medium';
 }
-
+body {
+    overflow-x: hidden;
+}
 .titre {
     width: 100%;
     position: relative;

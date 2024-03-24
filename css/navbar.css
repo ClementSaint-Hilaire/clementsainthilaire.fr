@@ -12,7 +12,9 @@
     background-color: var(--fond-blanc);
     font-family: 'Satoshi-Medium';
 }
-
+body {
+    overflow-x: hidden;
+}
 .navbar {
     width: 100vw;
     height: 100px;

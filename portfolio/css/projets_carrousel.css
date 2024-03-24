@@ -1,7 +1,7 @@
 @import url('chillax.css');
 
 :root {
-    --blanc : #F0F0F0;
+    --blanc : #F5F5F7;
     --noir : #0D0D0D;
     --gris : #808080;
     --bleu: #0A84FF;
@@ -17,7 +17,9 @@
     color: var(--noir);
     font-family: 'Chillax-Variable';
 }
-
+body {
+    overflow-x: hidden;
+}
 
 .carousel {
     height: fit-content;
