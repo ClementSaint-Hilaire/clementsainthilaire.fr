@@ -1,0 +1,443 @@
+@import url('chillax.css');
+
+:root {
+    --blanc : #F0F0F0;
+    --noir : #0D0D0D;
+    --gris : #808080;
+    --neomorphDrop : 18px 18px 30px 0px #D1D9E6, -18px -18px 30px 0px #FFF;
+    --titre : 53px;
+    --soustitre : 15px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--blanc);
+    color: var(--noir);
+    font-family: 'Chillax-Variable';
+}
+
+/**********partie 1**********/
+.experiences {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 1000px;
+    background: transparent;
+    overflow: hidden;
+}
+.titre {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background: transparent;
+    margin: 0 0 100px 0;
+    padding: 0 88px;    
+    cursor: initial;
+}
+.titre h1 {
+    font-size: var(--titre);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+span {
+    color: var(--gris);
+    background: transparent;
+}
+.titre h2 {
+    color: var(--gris);
+    font-size: var(--soustitre);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+}
+.experiencesProCard {
+    position: relative;
+    display: flex;
+    height: fit-content;
+    margin: 0 auto -100px auto;
+    border-radius: 46px;
+    overflow: hidden;
+}
+.carousel {
+    width: 1200px;
+    height: 900px;
+    position: relative;
+    display: inline-block;
+    border-radius: 46px;
+}
+.xpCard {
+    width: 1200px;
+    height: 750px;
+    position: relative;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 46px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    cursor: e-resize;
+}
+.boutons {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    justify-content: end;
+    margin: 0 0px 50px 0px;
+    background: transparent;
+}
+.boutonL,
+.boutonR {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 25px;
+    cursor: pointer;
+    transition: all 1s (ease);
+}
+.boutonL:hover, 
+.boutonR:hover {
+    transform: scale(1.1);
+    transition: all 1s (ease);
+}
+.boutonL:active,
+.boutonR:active {
+    transform: scale(0.9);
+    transition: all 1s (ease);
+}
+.contenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    margin: 308px auto;
+    z-index: 10;
+}
+.contenu h1 {
+    color: var(--blanc);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    position: relative;
+    z-index: 10;
+}
+.contenu h2 {
+    position: relative;
+    width: 650px;
+    color: var(--blanc);
+    text-align: center;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+    z-index: 10;
+}
+.cardFooter {
+    position: absolute;
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    top: 370px;
+    background: transparent;
+}
+.liensToSite {
+    position: relative;
+    display: flex;
+    background: transparent;
+    align-items: center;
+    width: 90px;
+    justify-content: space-between;
+}
+svg {
+    background: transparent;
+}
+.liensToSite h1 {
+    background: transparent;
+}
+.liensToSite h1 a {
+    text-decoration: none;
+    color: var(--gris);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: transparent;
+}
+.liensToSite h1 a:hover {
+    text-decoration: underline;
+
+}
+.cardFooter h2 {
+    color: var(--blanc);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+    background: transparent;
+}
+
+/**********partie 2**********/
+
+
+.ecolesExperiences {
+    display: grid;
+    place-items: center;
+    margin-inline: 0.1rem;
+    padding-block: 5rem;
+}
+.cardContainer {
+    display: grid;
+    row-gap: 3.5rem;
+}
+.cardArticle {
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+}
+.cardArticle img{
+    width: 100%;
+    
+}
+.cardData {
+    width: 500px;
+    background-color: #FFF;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1.5rem;
+    position : absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1.5s 1.5s;
+}
+.cardData h1 {
+    color: var(--noir);
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    margin: .25rem 0;
+    background: transparent;
+}
+.cardDataFooter {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+.cardDataFooter a {
+    color: var(--gris);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+}
+.cardDataFooter a:hover {
+    text-decoration: underline;
+}
+.cardDataFooter h2 {
+    color: var(--gris);
+    font-size: 15px;
+    font-weight: 700;
+    background: transparent;
+}
+.cardArticle:hover .cardData {
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+} 
+.cardArticle:hover {
+    animation: remove-overflow 2s forwards;
+}
+.cardArticle:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+.cardArticle:not(:hover) .cardData {
+    animation: remove-data 2s forwards;
+}
+
+
+@keyframes show-data  {
+    50% {
+        transform: translateY(-10rem)
+    }
+    100% {
+        transform: translateY(-7rem);
+    }
+}
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+@keyframes remove-data {
+    0% {
+        transform: translateY(-7rem);
+    }
+    50% {
+        transform: translateY(-10rem);
+    }
+    100% {
+        transform: translateY(.5rem);
+    }
+}
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none; 
+    }
+    50% {
+        overflow: hidden;
+    }
+}
+
+
+/*---------------RESPONSIVE---------------*/
+
+@media screen and (max-width: 550px) {
+    .ecolesExperiences {
+        width: 100%;
+    }
+    .cardData {
+        width: 250px;
+        padding: 1rem;
+    }
+    .carousel {
+        width: 300px;
+        height: 500px;
+    }
+    .experiences {
+        padding: 10px;
+    }
+    .titre {
+        padding: 0;
+    }
+    .contenu {
+        margin: 120px auto;
+        padding: 0 15px;
+        align-items: start;
+    } 
+    .contenu h2 {
+        width: auto;
+        font-size: 22px;
+        text-align: left;
+        margin-top: 10px;
+    }
+    .boutons {
+        width: auto;
+        margin: unset; 
+        justify-content: space-evenly;
+    }
+    .boutonL, .boutonR {
+        margin: unset;
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
+    }
+    .cardData {
+        width: 300px;
+
+    }
+    .cardData h1 {
+        font-size: 13px;
+    }
+
+}
+@media screen and (max-width: 940px) and (min-width: 550px) {
+    .carousel {
+        width: 500px;
+        height: 400px;
+    }
+    .experiences {
+        padding: 10px;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.5rem;
+    }
+    .contenu {
+        margin: 120px auto;
+        padding: 25px;
+    } 
+    .contenu h2 {
+        width: auto;
+        font-size: 25px;
+    }
+    .boutons {
+        width: auto;
+        margin: 0 auto;
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
+    }
+    .cardData {
+        width: 400px;
+
+    }
+    .cardData h1 {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1220px) and (min-width: 940px){
+    .carousel {
+        width: 900px;
+    }
+    .ecolesExperiences {
+        height: 100vh;
+    }
+    .cardContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .boutons {
+        width: auto;
+        margin: 0 auto;
+    }
+    .experiencesProCard{ 
+        margin: 0 auto 30px auto;
+    }
+    .ecolesExperiences {
+        height: auto;
+    }
+    .ecolesExperiences {
+        display: flex;
+        flex-direction: column;
+    }
+    .cardContainer {
+        grid-template-columns: none;
+    }
+}
