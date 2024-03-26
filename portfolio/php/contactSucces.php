@@ -19,7 +19,7 @@
     </section>
 
     <section class="contact">
-            <img src="../../images/Contact/message envoyé Light.png" alt="succes">
+            <img src="../images/Contact/message envoyé Light.png" alt="succes">
         <div class="resauxSociaux">
             <a href="https://www.linkedin.com/in/clément-saint-hilaire-01412a282"><img src="../images/Contact/LinkedIn.svg"></a>
             <a href="https://github.com/ClementSaint-Hilaire"><img src="../images/Contact/Github.svg" alt=""></a>
