@@ -220,10 +220,16 @@ body {
     .card h3 {
         font-size: 14px;
     }
+    .recherche_container {
+        margin: 120px auto 25px auto;
+    }
 }
 @media screen and (max-width: 1015px) and (min-width: 768px) { 
     .blog {
         justify-content: center;
+    }
+    .recherche_container {
+        margin: 120px auto 25px auto;
     }
 }
 

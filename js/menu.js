@@ -39,3 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
         menuButton.style.display = 'flex';
     });
 });
+
+
+document.getElementById('topButton').addEventListener('click', function() {
+    window.scrollTo({
+        top: 0
+    });
+});
