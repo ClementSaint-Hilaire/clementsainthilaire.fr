@@ -68,6 +68,7 @@
        $query->bindColumn('titre', $titre);
        $query->bindColumn('description', $description);
        $query->bindColumn('tags', $tags);
+       $query->bindColumn('date', $date);
    
        $results_found = false; 
    
@@ -80,7 +81,13 @@
        
            echo '<a class="card"  href="./article.php?id='.$id.'">';
                echo '<img src="' . htmlspecialchars($img) . '">';
-               echo '<h1>' . htmlspecialchars($tags_without_comma) . '</h1>';
+
+               echo '<div class="date_et_titre">';
+                    echo '<h1>' . date('d/m/Y', strtotime($date)) . '</h1>';
+                    echo '<h4> | </h4>';
+                    echo '<h1>' . htmlspecialchars($tags_without_comma) . '</h1>';
+               echo '</div>';
+
                echo '<h2>' . htmlspecialchars($titre) . '</h2>';
                echo '<h3>' . htmlspecialchars($description) . '</h3>';
            echo '</a>';

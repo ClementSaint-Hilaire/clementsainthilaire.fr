@@ -167,7 +167,26 @@ body {
     color: var(--text-gris);
     cursor: pointer;
 }
-
+.date_et_titre {
+    position: relative;
+    display: flex;
+    width: auto;
+    align-items: center;
+}
+.date_et_titre h1,
+.date_et_titre h4 {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 5px;
+    font-size: 13px;
+    color: var(--text-gris);
+    font-weight: normal;
+    background: transparent;
+}
+.date_et_titre h4 {
+    font-size: 20px;
+}
 /*---------------RESPONSIVE---------------*/
 
 
