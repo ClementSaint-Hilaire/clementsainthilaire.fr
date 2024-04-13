@@ -6,6 +6,5 @@ De sorte à ce que "card" devienne la page d'accueil, et portfolio, une entrée 
 Le site est accessible sur https://clement.sainthilaire.fr
 
 updates à venir : 
-- navbar fiwed
 - date des articles
 - section commentaires
