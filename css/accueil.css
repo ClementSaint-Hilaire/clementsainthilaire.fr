@@ -80,7 +80,7 @@ body {
     display: flex;
     width: 80%;
     max-width: 1700px;
-    margin: 120px auto 25px auto;
+    margin: 220px auto 25px auto;
     z-index: 900;
 }
 .loupe {

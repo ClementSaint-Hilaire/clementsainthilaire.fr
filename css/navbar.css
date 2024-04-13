@@ -18,11 +18,13 @@ body {
 .navbar {
     width: 100vw;
     height: 100px;
-    position: static;
-    background: rgba(245, 245, 247, 0.6);
+    position: fixed;
+    background: rgba(245, 245, 247);
     justify-content: center;
     align-items: center;
     display: flex;
+    z-index: 999;
+    top: 0;
 }
 .container {
     position: relative;
