@@ -144,6 +144,41 @@ INSERT INTO `ecoles` (`id`, `imglink`, `titre`, `ecolelink`, `ecolenom`, `ville`
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `cards`
+--
+
+DROP TABLE IF EXISTS `cards`;
+CREATE TABLE IF NOT EXISTS `cards` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `img` varchar(255) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `link` varchar(255) NOT NULL,
+  `ordre` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Déchargement des données de la table `cards`
+--
+
+INSERT INTO `cards` (`id`, `img`, `titre`, `link`, `ordre`) VALUES
+(1, '../img/visionos.png', 'VISION OS', 'https://www.figma.com/community/file/1328464238383806605/research-on-vision-os', 5),
+(2, '../img/porsche.png', 'PORSCHE', 'https://www.figma.com/community/file/1335933291566581074/redesign-porsche-taycan', 2),
+(3, '../img/crisetool.png', 'CRISETOOL', '', 3),
+(4, '../img/bento.png', 'BENTO GRIDS', 'https://www.figma.com/community/file/1353374397392924935/research-on-bento', 4),
+(5, '../img/4cf.png', 'COEURCOTEFLEURIE', '', 9),
+(6, '../img/404.png', '404 PAGES', 'https://www.figma.com/community/file/1353744962325890487/cool-404-pages', 5),
+(7, '../img/portfolio.png', '(old) PORTFOLIO', 'https://www.figma.com/community/file/1349857591277304414/cool-ui-ux-portfolio', 8),
+(8, '../img/toggle.png', 'NEO TOGGLE', 'https://www.figma.com/community/file/1335710074562180345/cool-toggle-annimation', 12),
+(9, '../img/croissantage.png', 'CROISSANTAGE', 'https://croissantage.com', 6),
+(10, '../img/blog.png', 'BLOG', 'https://www.figma.com/community/file/1348774121253901502/cool-clean-blog', 10),
+(11, '../img/alpine.png', 'ALPINE A110', 'https://www.figma.com/community/file/1335959683520362852/redesign-alpine-a110', 11),
+(12, '../img/emusic.png', 'EMUSIC', 'https://www.figma.com/community/file/1370098717301311092/emusic-application-de-concervatoire-de-musique', 1),
+(13, '../img/mail.png', 'MAIL TEMPLATE', 'https://www.figma.com/community/file/1370110750726955644/mail-template', 7);
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `xpcard`
 --
 
